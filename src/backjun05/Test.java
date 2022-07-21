@@ -1,4 +1,4 @@
-package backjun5;
+package backjun05;
 
 public class Test {
 	long sum(int[] a) {
