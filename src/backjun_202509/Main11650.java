@@ -12,6 +12,7 @@ public class Main11650 {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+
 		int N = Integer.parseInt(br.readLine());
 		int[][] arr = new int[N][2]; //배열
 		StringBuilder sb = new StringBuilder();
@@ -23,18 +24,19 @@ public class Main11650 {
 			arr[i][1] = Integer.parseInt(st.nextToken()); //y	
 		}
 		Arrays.sort(arr,(a,b)->{
-			if (a[0] == b[0]) return a[1]- a[2];
+			if (a[0] == b[0]) return a[1]- b[1];
 			return a[0] - b[0];
 			
 		});
 		
 		
 		for(int i=0; i<N; i++) {
-			sb.append(arr[1][0] + " " + arr[i][1] + "\n");
+			sb.append(arr[i][0]).append(" ").append(arr[i][1]).append("\n");
 		}
 		
 		System.out.println(sb);
 		
 	}
+
 
 }

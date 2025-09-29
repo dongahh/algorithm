@@ -17,12 +17,10 @@ public class Main_10773_2 {
 		ArrayList<Integer> arr = new ArrayList<>();
 		for(int i=0; i<K; i++) {
 			int num = Integer.parseInt(br.readLine());
-			if(num ==0 ) {
+			if(num ==0 && !arr.isEmpty()) {
 				arr.remove(arr.size()-1);
 			}else {
 				arr.add(num);
-					
-				
 			}
 		}
 		
