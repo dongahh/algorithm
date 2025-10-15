@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 
 
-public class Main_tree_11725 {
+public class Main_tree_11725_DSP {
 	
 	static ArrayList<Integer>[] list;
 	static boolean[] visited;
